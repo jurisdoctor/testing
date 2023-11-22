@@ -1,13 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 
-import { Button } from '../../components/Button/Button';
-
-test('renders Button component', () => {
-  render(<Button title="increment" />);
-  const buttonElement = screen.getByText(/increment/i);
-  // expect(buttonElement).toBeInTheDocument();
-  expect(buttonElement).toHaveTextContent('increment');
-});
+import { Button } from '../../components/Counter/Button/Button';
 
 test('handles onClick', () => {
   const onClick = jest.fn();

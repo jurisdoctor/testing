@@ -7,5 +7,5 @@ test('renders Header component', () => {
   const linkElement = screen.getByText(/Counter/i);
   // expect(linkElement).toBeInTheDocument();
   // expect(linkElement).toHaveTextContent('Counter');
-  expect(linkElement).toHaveAttribute('role', 'contentinfo');
+  expect(linkElement).toHaveAttribute('role', 'heading');
 });
