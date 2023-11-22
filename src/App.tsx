@@ -1,12 +1,15 @@
-import "./App.css";
+import './App.styles.css';
 
-import React from "react";
-import logo from "./logo.svg";
+import { Counter } from './components/Counter/Counter';
+import { Header } from './components/Header/Header';
 
 function App() {
   return (
     <div className="app">
-      <h1>typescript testing</h1>
+      <div className="container">
+        <Header />
+        <Counter />
+      </div>
     </div>
   );
 }
